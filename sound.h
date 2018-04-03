@@ -1,5 +1,6 @@
+// #define DEBUG		// conditional compiling
 // countantr definitions
-#define SAMPLERATE 1600
+#define SAMPLERATE 16000
 
 // struct / union definition
 typedef struct{
