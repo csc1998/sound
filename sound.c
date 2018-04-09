@@ -1,3 +1,4 @@
+#include "comm.h"
 #include "sound.h"
 #include "screen.h"
 #include <stdio.h>
@@ -27,7 +28,7 @@ void dispWAVData(char filename[]){
     fread(&mh, sizeof(mh), 1, fp);  // skip over the header of wave file
     fread(samples, sizeof(short), SAMPLERATE, fp);
     fclose(fp);
-	clearScreen();
+    clearScreen();
     for(i=0; i<80; i++){
     	for(j=0, sum=0.0; j<SAMPLERATE/80; ++j){
     		sum += samples[j+i*200] * samples[j+i*200];
@@ -39,6 +40,9 @@ void dispWAVData(char filename[]){
 		dispBar(i, 20*log10(rms[i]));		// display dB value a bar
 #endif
 	}
+#ifdef COMM
+	sendToServer(rms);
+#endif
 }
 // function definition of dispWAVHeader()
 void dispWAVHeader(char filename[]){
