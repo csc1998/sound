@@ -79,4 +79,4 @@ List of Contents:
 	Vaasa University of Applied Sciences
 	Woffinitie 30, 65100, VAASA, Finland
 	Page  www.cc.puv.fi/~e1700704
-	E-mail: chesicheng1998@olook.com
+	E-mail: chesicheng1998@outlook.com
