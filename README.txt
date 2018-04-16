@@ -1,7 +1,7 @@
-#---------------------------- Sound Level Sensor ------------------------- 
+#---------------------------- Sound Level Sensor ---------------------------# 
 sound level meter project made by Che Sicheng, Fed.2018.
 
-This project uses a Paspberry Pi 3 Mode B a sound sensor. A USB sound card
+This project uses a Raspberry Pi 3 Mode B a sound sensor. A USB sound card
 with microphone and a RJ45 cable are needed as peripheral. The application
 runs periodically every second and take record from microphone at a sample
 rate of 16000 Hz. The sound is then calculated into 80 pieces of RMS value 
@@ -39,7 +39,7 @@ List of Contents:
    use this IP to run Putty.
    
    Third, the user can git clone the "sound" file from GitHub to Putty, 
-   and 'make' it and run the "sound.a".
+   and "make" it and run the "./sound.a".
    
    Next, the user can make some sound to the mirophone, and you will 
    get the sound signal on the Putty and receive the "sound.php" on 
